@@ -9,8 +9,9 @@ public class Knowledge : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // компонент - то, в котором будет поле сила атаки
-        if (other.TryGetComponent(out PlayerController playerController))
+        if (other.TryGetComponent(out Player player))
         {
+            // player.ATK+=atkMagnificaton;
             Debug.Log($"Сила атаки игрока увеличилась на {atkMagnificaton}");
             Destroy(gameObject);
         }

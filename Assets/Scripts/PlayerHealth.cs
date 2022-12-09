@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private GameObject gameOverCanvas;
    /* [SerializeField]*/ private float _health;
-   
+
+    public Action levelFailed;
 
     private void Start()
     {
@@ -30,10 +32,12 @@ public class PlayerHealth : MonoBehaviour
     {
          healthSlider.value = _health / totalHealth; //0-1
     }
+
     private void Die()
     {
         gameObject.SetActive(false); //выключаем игрока из сцены
         gameOverCanvas.SetActive(true);
+        levelFailed?.Invoke();
     }
 }
 

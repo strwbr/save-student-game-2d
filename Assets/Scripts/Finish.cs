@@ -9,6 +9,8 @@ public class Finish : MonoBehaviour
     [SerializeField] private GameObject messageUI; // сообщение, что не убиты все долги
     //[SerializeField] PlayerController player;
 
+    public Action levelFinish;
+
     private bool _isFinishActivated = false;
     private PlayerController player;
 
@@ -36,6 +38,7 @@ public class Finish : MonoBehaviour
             gameObject.SetActive(false); // деактивация финиша
             levelCompleteCanvas.SetActive(true); // активация канваса: пройденный уровень
             Time.timeScale = 0; // игра ставится на паузу
+            levelFinish?.Invoke();
         }
         else
         {
