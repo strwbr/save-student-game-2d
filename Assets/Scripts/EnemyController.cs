@@ -37,14 +37,14 @@ public class EnemyController : MonoBehaviour
         _rightBoundaryPosition = _leftBoundaryPosition + Vector2.right * walkDistance; // Vector2.right = new Vector2(1,0)
 
         _waitTime = timeToWait;
-       // _chaseTime = timeToChase;
+        // _chaseTime = timeToChase;
 
         _walkSpeed = patrolSpeed;// изначально враг в режиме патруля => он имеет ск-ть при патруле
     }
 
     private void Update()
     {
-      if (_isWait)
+        if (_isWait)
         {
             // т.к. Update() вызывается каждый фрейм
             StartWaitTimer();
@@ -61,7 +61,7 @@ public class EnemyController : MonoBehaviour
         _nextPoint = Vector2.right * _walkSpeed * Time.fixedDeltaTime; // ск-ть перемещения
 
         // если враг НЕ ждет и НЕ преследует игрока, то он должен патрулировать
-       if (!_isWait /*&& !_isChasingPlayer*/)
+        if (!_isWait /*&& !_isChasingPlayer*/)
         {
             Patrol();
         }
@@ -116,6 +116,7 @@ public class EnemyController : MonoBehaviour
         {
             _collidedWithPlayer = true;
         }
+
     }
 
     /*Выход из коллайдера другого объекта*/
