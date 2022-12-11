@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -508,6 +509,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      KNIGA2kh4_4: 1991920261724171767
+      KNIGA2kh4_11: 5245026643793573356
+      KNIGA2kh4_2: -7526645897910572871
+      KNIGA2kh4_8: -3855087756101132355
+      KNIGA2kh4_14: -2489786518950498162
+      KNIGA2kh4_6: -771457478063944452
+      KNIGA2kh4_1: -3181679331888092182
+      KNIGA2kh4_15: -1887433774742948972
+      KNIGA2kh4_7: -6813307429315952103
+      KNIGA2kh4_12: 8614958004920117764
+      KNIGA2kh4_10: 1005098374553622155
+      KNIGA2kh4_0: 597498973002550395
+      KNIGA2kh4_9: 7033285128253304398
+      KNIGA2kh4_5: 7174266357473358659
+      KNIGA2kh4_3: -6908977651794441011
+      KNIGA2kh4_13: 4726177470629752447
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
